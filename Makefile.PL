@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "run various tests on a distribution at build time",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.018, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -30,6 +30,7 @@ my $meta = {
                                          "namespace::autoclean" => 0,
                                          "Path::Iterator::Rule" => 0,
                                          "Path::Tiny"           => 0,
+                                         "perl"                 => 5.010001,
                                          "Try::Tiny"            => 0,
                                          "Types::Standard"      => 0,
                                          "version"              => 0.86,
@@ -38,13 +39,13 @@ my $meta = {
                         test      => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Dist::Inkt::Role::Test"                => { file => "lib/Dist/Inkt/Role/Test.pm", version => 0.001 },
+                        "Dist::Inkt::Role::Test"                => { file => "lib/Dist/Inkt/Role/Test.pm", version => 0.002 },
                         "Dist::Inkt::Role::Test::BumpedVersion" => {
                                                                      file => "lib/Dist/Inkt/Role/Test/BumpedVersion.pm",
-                                                                     version => 0.001,
+                                                                     version => 0.002,
                                                                    },
-                        "Dist::Inkt::Role::Test::SaneVersions"  => { file => "lib/Dist/Inkt/Role/Test/SaneVersions.pm", version => 0.001 },
-                        "Dist::Inkt::Role::Test::TestSuite"     => { file => "lib/Dist/Inkt/Role/Test/TestSuite.pm", version => 0.001 },
+                        "Dist::Inkt::Role::Test::SaneVersions"  => { file => "lib/Dist/Inkt/Role/Test/SaneVersions.pm", version => 0.002 },
+                        "Dist::Inkt::Role::Test::TestSuite"     => { file => "lib/Dist/Inkt/Role/Test/TestSuite.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -60,7 +61,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Role-Test/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
